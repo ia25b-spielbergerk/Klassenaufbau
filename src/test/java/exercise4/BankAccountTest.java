@@ -40,13 +40,4 @@ class BankAccountTest {
     account.withdraw(10);
     assertEquals(0.25, account.balance);
   }
-
-  @Test
-  public void testDriveOverLimit() {
-    account.drive(1000);
-    assertEquals(0, account.fuelLevel);
-    assertEquals(62649.35, account.mileage);
-  }
-
-
 }
